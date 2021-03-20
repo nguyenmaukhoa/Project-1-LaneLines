@@ -30,7 +30,7 @@ My pipeline consisted of 5 steps:
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by:
 - Finding the averaged centers and averaged slopes from all the lines detected from Hough Transform for the left and right line. 
-- Calculate new coordinates of both lines based on averaged slopes (m), averaged centers (x,y), and the height of the region of interest (y'). (y-y') = m(x-x')
+- Calculate new coordinates of both lines based on function (y-y') = m(x-x') (m: averaged slopes - x,y: averaged centers), and the height (y') of the region of interest. 
 
 
 ### 2. Identify potential shortcomings with your current pipeline
